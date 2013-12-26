@@ -2,11 +2,18 @@
 
 my explorations of the python interface to minecraft on the raspberry pi
 
+# Demos
+
+## Towers
+
+creates a random collection of buildings
+!(towers.png)
+
 # Required
 
 Martin O'Hanlon's library for drawing shapes: http://www.stuffaboutcode.com/2013/11/coding-shapes-in-minecraft.html
 
 # Thanks
 
-	@martinohanlon
+@martinohanlon
 
