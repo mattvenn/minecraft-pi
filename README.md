@@ -7,7 +7,7 @@ my explorations of the python interface to minecraft on the raspberry pi
 ## Towers
 
 creates a random collection of buildings
-!(towers.png)
+![towers](towers.png "towers")
 
 # Required
 
