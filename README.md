@@ -2,6 +2,10 @@
 
 my explorations of the python interface to minecraft on the raspberry pi
 
+If you want to run on another platform, see [Martin O'Hanlon's post about CanaryMod](http://www.stuffaboutcode.com/2014/10/minecraft-raspberryjuice-and-canarymod.html). My notes on installing on [OSX are here](OSX_notes.md)
+
+My notes on useful [CanaryMod commands are here](CanaryMod.md)
+
 # Demos
 
 ## Spiral Towers
@@ -22,7 +26,7 @@ Some demos require Martin O'Hanlon's library for drawing shapes: http://www.stuf
 
 # Thanks
 
-* raspberry pi crew
 * @martinohanlon for inspiration
+* raspberry pi crew
 * minecraft crew for making a special version available for the pi!
 
