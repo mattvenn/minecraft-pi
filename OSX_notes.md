@@ -14,6 +14,7 @@ Previously I used craftbukkit but this seems defunct. I followed some (Windows) 
 * Create a new folder called minecraft and copy the jar file inside
 * Create a new text document called start.sh with these contents:
 
+
 	#!/bin/bash
 	cd "$( dirname "$0" )"
 	java -Xmx1024M -jar CanaryMod.jar -o true
