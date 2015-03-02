@@ -12,13 +12,7 @@ Previously I used craftbukkit but this seems defunct. I followed some (Windows) 
 
 * [Download CanaryMod](http://canarymod.net/releases) that matches your minecraft version
 * Create a new folder called minecraft and copy the jar file inside
-* Create a new text document called start.sh with these contents:
-	#!/bin/bash
-	cd "$( dirname "$0" )"
-	java -Xmx1024M -jar CanaryMod.jar -o true
-
-Make sure the jar file (CanaryMod.jar) matches the filename you used. 
-
+* Create a new text document called [start.sh](start.sh). Make sure the jar file (CanaryMod.jar) matches the filename you used. 
 * Make the file executable: chmod a+x start.sh
 * Test it by running on a terminal: ./start.sh
 
