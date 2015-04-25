@@ -1,5 +1,5 @@
 import mcpi.minecraft as minecraft
-import mcpi.block as block
+import time
 import os
 
 mc = minecraft.Minecraft.create()
@@ -12,7 +12,8 @@ def take_photo():
 
 while True:
 	playpos = mc.player.getTilePos()
-	if playpos.x == -247 and playpos.y == 10 and playpos.z ==60:
+	# print(playpos)
+	if playpos.x == -61 and playpos.y == 9 and playpos.z == -14:
 		#photo!
 		mc.postToChat("smile!")
 		time.sleep(2)
