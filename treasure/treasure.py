@@ -24,6 +24,6 @@ while True:
 	mc.postToChat(dist)
 	# flash the light depending on how close we are
 	pibrella.light.on()
-	time.sleep(dist/10)
+	time.sleep(dist/100)
 	pibrella.light.off()
-	time.sleep(dist/10)
+	time.sleep(dist/100)
