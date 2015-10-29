@@ -4,6 +4,7 @@ import time
 import random
 from mcpi.vec3 import Vec3
 from math import sqrt, pow
+import pibrella
 
 mc = minecraft.Minecraft.create()
 
@@ -21,4 +22,8 @@ while True:
 	# http://math.stackexchange.com/questions/42640/calculate-distance-in-3d-space
 	dist = sqrt(pow(diff.x, 2) + pow(diff.y, 2) + pow(diff.z, 2))
 	mc.postToChat(dist)
-	time.sleep(1)
+	# flash the light depending on how close we are
+	pibrella.light.on()
+	time.sleep(dist/10)
+	pibrella.light.off()
+	time.sleep(dist/10)
