@@ -75,6 +75,9 @@ is something very similar for the 3D world of Minecraft:
     from math import sqrt
 	dist = sqrt(diff.x * diff.x + diff.y * diff.y + diff.z * diff.z)
 
-Now try to find a way to make the lights flash on and off depending on how
-big the `dist` variable is. Then you'll be able to navigate your way to the
-treasure by looking at how fast the lights flash.
+## Flashy lights
+
+If you put your code in a loop, then as you move around in Minecraft, the
+distance will be constantly recalculated.
+
+How can you make the lights flash faster the smaller `dist` is?
