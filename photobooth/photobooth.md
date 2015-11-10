@@ -69,7 +69,8 @@ Then this Python code will take a photo:
 
 ~~~ { .python }
 filename = 'picture.jpg'
-#os.system() runs a linux command called fswebcam which takes a photo
+import os
+# os.system() runs a linux command. fswebcam is a program that can take photos
 os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
 ~~~
 
