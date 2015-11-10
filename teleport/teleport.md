@@ -27,6 +27,12 @@ while True:
         print("button pressed!")
 ~~~
 
+Afer saving the program, you'll have to run it using the `sudo` command because
+accessing the Raspberry Pi's GPIOs needs super user privileges. If your program
+is called teleport.py, open a terminal, change to the directory where your
+program is and type:
+
+    sudo python teleport.py
 
 ## Random numbers
 
