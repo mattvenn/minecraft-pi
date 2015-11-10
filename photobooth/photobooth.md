@@ -68,7 +68,7 @@ If you have a webcam, first install the fswebcam program by opening a terminal a
 Then this Python code will take a photo:
 
 ~~~ { .python }
-filename = 'picture.jpg'
+filename = 'image.jpg'
 import os
 # os.system() runs a linux command. fswebcam is a program that can take photos
 os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
@@ -79,7 +79,8 @@ os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
 The picamera needs to be [installed](https://www.raspberrypi.org/help/camera-module-setup/) along with the [picamera Python library](https://www.raspberrypi.org/documentation/usage/camera/python/README.md).
 
 ~~~ { .python }
+filename = 'image.jpg'
 import picamera
 camera = picamera.PiCamera()
-camera.capture('image.jpg')
+camera.capture(filename)
 ~~~
