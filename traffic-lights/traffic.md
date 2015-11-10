@@ -10,6 +10,8 @@
 
 You will create traffic lights in Minecraft and animate them with a loop.
 
+![traffic lights](traffic.png)
+
 ----
 
 ## Creating blocks
