@@ -6,37 +6,38 @@ import mcpi.block as block
 mc = minecraft.Minecraft.create()
 
 # clear area
-mc.setBlocks(-60,0,-60,60,50,60,block.AIR.id)
+mc.setBlocks(-10,0,-60,80,60,60,block.AIR.id)
 
-# go there
-mc.player.setPos(5,0,0)
+# go to a good viewing position
+mc.player.setPos(30,0,30)
 
-def take_photo():
-	filename = 'picture.jpg'
-	#os.system() runs a linux command called fswebcam which takes a photo
-	os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
-	print("taken photo!")
+filename = 'picture.jpg'
+print("taking photo...")
+os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
 
-take_photo()
-image = Image.open('picture.jpg')
+print("processing...")
+image = Image.open(filename)
+image = image.transpose(Image.FLIP_TOP_BOTTOM)
 result = image.convert('P', palette=Image.ADAPTIVE, colors=16)
-import ipdb; ipdb.set_trace()
 width, height = result.size
 
 x = 0
 y = 0
-pix_size = 50
+z = 0
+pix_size = 10
+
+print("drawing...")
 while y < height:
     while x < width:
         # get value of the pixel at that point
         pixel = result.getpixel((x, y))
-        print(x, y, pixel)
+        # print(x, y, pixel)
 
         # create a wool block
-		mc.setBlock(x, y, z, block.WOOL.id, pixel)
+        mc.setBlock(x/pix_size, y/pix_size, z, block.WOOL.id, pixel)
 
         x = x + pix_size
 
+    # next row, so set x to 0 and increase y
+    x = 0
     y = y + pix_size
-
-#result.save('reduced.png')
