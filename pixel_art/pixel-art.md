@@ -5,7 +5,7 @@
 # Pixel Art
 
 * KS3
-* This activity will help you understand lists in Python
+* This activity will help you understand datastructures and lists in Python
 * You will need: Minecraft with the Python API
 
 You will draw a simple pattern on graph paper, and then write a program to

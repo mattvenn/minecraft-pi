@@ -45,12 +45,14 @@ co-ordinates being printed in the Python Shell.
 
 Walk to your trap and make a note of the co-ordinates when you are inside.
 
+## Conditionals
+
 Now you need a `conditional statement` so that something happens only when Steve
 is in the exact location you just found:
 
 ~~~ { .python }
 if playpos.x == -247 and playpos.y == 10 and playpos.z == 60:
-    print("trapped")!
+    print("trapped!")
 ~~~
 
 Put this code into your loop (make sure the code is indented properly) and run
