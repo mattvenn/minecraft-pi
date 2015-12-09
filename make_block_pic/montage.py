@@ -1,7 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-image_dir = 'pngs/'
+image_dir = 'wool-pngs/'
+id_file = 'wool_type'
 
 #how big we want the montage to be
 crop_width = 300
@@ -23,7 +24,7 @@ print(mont_width, mont_height)
 montage_image = Image.new('RGB',(mont_width,mont_height), "white")
 draw = ImageDraw.Draw(montage_image)
 
-with open('block_types') as fh:
+with open(id_file) as fh:
     block_nums = fh.readlines()
 
 all_blocks = []
@@ -35,7 +36,6 @@ for block_num in block_nums:
         print("skipping line" + block_num)
         continue
 
-image_dir = 'pngs/'
 all_files = os.listdir(image_dir)
 
 x = 0
