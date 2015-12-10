@@ -1,6 +1,10 @@
-# make a picture showing all block types
+# block type images
 
-for the handout
+![all blocks](blocks.jpg)
+
+![wool colours](wool_types.jpg)
+
+for the CPD4T workshop handout
 
 ## create screenshots of each block
 
