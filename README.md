@@ -4,21 +4,7 @@ my explorations of the python interface to minecraft on the Raspberry Pi, Linux 
 
 # Demos
 
-## Video Demo
-
-This is [the code](video_demo.py) I used to make the [youtube video demo](https://www.youtube.com/watch?v=m-BHmdWHjeM)
-
-## Spiral Towers
-
-Creates a random collection of buildings, but using much simpler code than my first attempt (towers.py). Also faster and more fun to watch building.
-
-![spiral towers](spiral_towers.png "spiral towers")
-
-## Towers
-
-Creates a random collection of buildings, code is a bit hard to read. Uses a matrix of values to define the corners of each face of a story. Then towers are made of multiple stories.
-
-![towers](towers.png "towers")
+Check the sub directories for separate readmes on each demo.
 
 # Notes / Links
 
