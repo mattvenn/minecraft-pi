@@ -1,6 +1,10 @@
 # block type images
 
+## all blocks
+
 ![all blocks](blocks.jpg)
+
+## wool colours
 
 ![wool colours](wool_types.jpg)
 
