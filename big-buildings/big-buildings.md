@@ -1,7 +1,3 @@
-% KS3
-% programming, loops, Python, Minecraft
-%
-
 # Big buildings
 
 * KS3
@@ -11,10 +7,8 @@
 
 It's possible to build amazing things in the Minecraft world, and we can often do them a lot quicker with a few Python tricks!
 
-![shuttle](space-shuttle.jpg)
+\ ![shuttle](space-shuttle.jpg)
 Image courtesy of [crpeh](https://www.reddit.com/r/Minecraft/comments/14i1lu/we_are_ready_for_liftoff_captain/)
-
-----
 
 ## Single blocks
 
@@ -33,11 +27,11 @@ Then to place a block we use the `setBlock` code:
 
 X, Y and Z are the co-ordinates where the block is placed:
 
-![xyz](xyz.png)
+\ ![xyz](xyz.png)
 
 And the `block_id` is the number of the block you want to place:
 
-![blocks](blocks.jpg)
+\ ![blocks](blocks.jpg)
 
 If you want to place a block where you currently are, you can look at the top left of the screen, where your X, Y and Z position is displayed.
 
@@ -50,7 +44,7 @@ Placing one block at a time is great, but we have a way of creating big volumes 
 The volume between x1, y1, z1 and x2, y2, z2 will be filled with blocks of type
 `block_id`. 
 
-![cuboid](cuboid2.png)
+\ ![cuboid](cuboid2.png)
 
 For more information about `setBlocks`, see [this page](https://arghbox.wordpress.com/2013/07/07/minecraft-pi-api-setting-blocks/) by [Craig
 Richardson](https://twitter.com/CraigArgh)
