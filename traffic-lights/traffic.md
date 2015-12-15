@@ -35,24 +35,6 @@ mc.setBlocks(-60,0,-60,60,50,60,block.AIR.id)
 mc.player.setPos(5,0,0)
 ~~~
 
-Take a look at the `setBlocks` command above. There are quite a lot of
-parameters!
-
-Here it is again with names for each parameter:
-
-    setBlocks(x1, y1, z1, x2, y2, z2, blockID)
-
-The volume between x1, y1, z1 and x2, y2, z2 will be filled with blocks of type
-blockID. 
-
-![cuboid](cuboid2.png)
-
-So when you clear the area with the command above, the volume is
-from x = -60 to x = 60, y = 0 to y = 50, and z = -60 to z = 60.
-
-For more information about `setBlocks`, see [this page](https://arghbox.wordpress.com/2013/07/07/minecraft-pi-api-setting-blocks/) by [Craig
-Richardson](https://twitter.com/CraigArgh)
-
 Either use a few `setBlock` commands or a single `setBlocks` command to create a
 traffic light.
 
