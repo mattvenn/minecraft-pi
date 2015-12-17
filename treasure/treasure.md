@@ -6,7 +6,7 @@
 
 You will use the PiBrella's lights to guide you to hidden treasure in Minecraft.
 
-![pibrella](pibrella.jpg)
+\ ![pibrella](pibrella.jpg)
 
 ## Lights
 

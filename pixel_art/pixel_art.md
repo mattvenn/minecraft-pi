@@ -7,7 +7,7 @@
 You will draw a simple pattern on graph paper, and then write a program to
 reproduce this in Minecraft.
 
-![pixels](pixels.png)
+\ ![pixels](pixels.png)
 
 ## Draw your art
 
@@ -18,7 +18,7 @@ blocks.
 Then make a copy of your image, but convert the colours to numbers using this
 table:
 
-![wool colours](wool_types.jpg)
+\ ![wool colours](wool_types.jpg)
 
 ## Lists
 

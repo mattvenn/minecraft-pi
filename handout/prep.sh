@@ -1,4 +1,5 @@
 rm *md *jpg *png
+cp ../documentation/*png .
 
 cp ../trap/* .
 cp ../photobooth/* .

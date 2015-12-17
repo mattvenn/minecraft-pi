@@ -7,7 +7,7 @@
 You will use the PiBrella's button to teleport Steve to a random location in
 Minecraft.
 
-![pibrella](pibrella.jpg)
+\ ![pibrella](pibrella.jpg)
 
 ## Button
 
@@ -50,7 +50,6 @@ Teleporting in Minecraft is as easy as setting the player position:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-import mcpi.block as block
 
 mc = minecraft.Minecraft.create()
 mc.player.setPos(100, 100, 100)
