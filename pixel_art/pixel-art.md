@@ -1,7 +1,3 @@
-% KS3
-% programming, loops, Python, Minecraft
-%
-
 # Pixel Art
 
 * KS3
@@ -12,8 +8,6 @@ You will draw a simple pattern on graph paper, and then write a program to
 reproduce this in Minecraft.
 
 ![pixels](pixels.png)
-
-----
 
 ## Draw your art
 

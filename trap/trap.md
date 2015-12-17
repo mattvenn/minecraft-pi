@@ -1,7 +1,3 @@
-% KS3
-% programming, loops, Python, Minecraft
-%
-
 # Trap!
 
 * KS3
@@ -11,8 +7,6 @@
 
 You will build a trap, then create a program that builds a wall the instant you
 step inside.
-
-----
 
 ## Building a trap
 

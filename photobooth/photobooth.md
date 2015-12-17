@@ -1,7 +1,3 @@
-% KS3
-% programming, loops, Python, Minecraft
-%
-
 # Photo booth
 
 * KS3
@@ -10,8 +6,6 @@
 * You will need: Minecraft with the Python API, webcam or picamera.
 
 You will build a photo booth, then create a program that takes a photo when you step inside.
-
-----
 
 ## Building the booth
 

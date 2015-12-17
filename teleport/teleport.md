@@ -1,7 +1,3 @@
-% KS3
-% programming, pibrella, loops, Python, Minecraft
-%
-
 # Teleport
 
 * KS3
@@ -12,8 +8,6 @@ You will use the PiBrella's button to teleport Steve to a random location in
 Minecraft.
 
 ![pibrella](pibrella.jpg)
-
-----
 
 ## Button
 

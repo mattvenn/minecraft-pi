@@ -1,7 +1,3 @@
-% KS3
-% programming, pibrella, loops, Python, Minecraft
-%
-
 # Treasure Hunt
 
 * KS3
@@ -11,8 +7,6 @@
 You will use the PiBrella's lights to guide you to hidden treasure in Minecraft.
 
 ![pibrella](pibrella.jpg)
-
-----
 
 ## Lights
 
