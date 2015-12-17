@@ -5,7 +5,8 @@
  in Python.
 * You will need: Minecraft with the Python API
 
-It's possible to build amazing things in the Minecraft world, and we can often do them a lot quicker with a few Python tricks!
+It's possible to build amazing things in the Minecraft world, and it can often
+be a lot quicker with a few Python tricks!
 
 \ ![shuttle](space-shuttle.jpg)
 Image courtesy of [crpeh](https://www.reddit.com/r/Minecraft/comments/14i1lu/we_are_ready_for_liftoff_captain/)
@@ -72,7 +73,8 @@ Try building a pyramid by stacking 5 squares on top of each other, with each squ
     mc.setBlocks(-4,1,-4,4,2,4,7)
     ...
 
-Can you see a pattern in the X, Y and Z numbers? Because there is a simple pattern, we can save time, or build bigger pyramids by using a loop:
+Can you see a pattern in the X, Y and Z numbers? Because there is a simple
+pattern, you can save time, or build bigger pyramids by using a loop:
 
 ~~~ { .python }
 width = 5
