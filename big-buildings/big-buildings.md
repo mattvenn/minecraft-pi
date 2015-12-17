@@ -12,16 +12,16 @@ Image courtesy of [crpeh](https://www.reddit.com/r/Minecraft/comments/14i1lu/we_
 
 ## Single blocks
 
-It's easy to create a single block in the Minecraft world. First of all, we need the usual starting lines that include the important libraries:
+It's easy to create a single block in the Minecraft world. First of all, import
+the Minecraft library:
 
-~~~ { .python }
-import mcpi.minecraft as minecraft
-import mcpi.block as block
+    import mcpi.minecraft as minecraft
 
-mc = minecraft.Minecraft.create()
-~~~
+Then create a `handle` that will let you interface Python with Minecraft:
 
-Then to place a block we use the `setBlock` code:
+    mc = minecraft.Minecraft.create()
+
+Then to place a block, use the `setBlock` code:
 
     mc.setBlock(x, y, z, block_id)
 
@@ -37,7 +37,7 @@ If you want to place a block where you currently are, you can look at the top le
 
 ## Bigger blocks
 
-Placing one block at a time is great, but we have a way of creating big volumes of blocks by asking Minecraft to fill in all the space in between 2 co-ordinates:
+Placing one block at a time is great, but there is also a way to creat big volumes of blocks by asking Minecraft to fill in all the space in between 2 co-ordinates:
 
     setBlocks(x1, y1, z1, x2, y2, z2, block_id)
 
