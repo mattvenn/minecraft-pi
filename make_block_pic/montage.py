@@ -10,7 +10,7 @@ with open(id_file) as fh:
     block_nums = fh.readlines()
 
 #how big we want the montage to be
-crop_width = 300
+crop_width = 280
 crop_y_offset = 50
 x_tiles = 7
 print(len(block_nums))

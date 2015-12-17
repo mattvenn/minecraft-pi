@@ -10,18 +10,20 @@ step inside.
 
 ## Building a trap
 
-This time, you'll use Steve's building skills to construct a 3 walled cubicle
-like the picture below:
+This time, you'll build a 3 walled cubicle by hand.
+
+* Use the mouse to look around. Left click destroys a block, right click places a block.
+* Use number keys or mouse scroll wheel to choose what block to place. 
+* Use the inventory (press the E key) to select different block types.
 
 ![trap](trap.png)
 
 ## Positions
 
-You need to include the usual libraries at the start of your program:
+You'll need the usual lines at the start of your program:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-import mcpi.block as block
 
 mc = minecraft.Minecraft.create()
 ~~~
@@ -42,7 +44,8 @@ Walk to your trap and make a note of the co-ordinates when you are inside.
 ## Conditionals
 
 Now you need a `conditional statement` so that something happens only when Steve
-is in the exact location you just found:
+is in the exact location you just found. Don't use my numbers below, use the
+numbers you found when you ran your program.
 
 ~~~ { .python }
 if playpos.x == -247 and playpos.y == 10 and playpos.z == 60:
@@ -55,9 +58,3 @@ print out 'trapped!'.
 
 Now change your program so instead of printing a message it builds a wall behind
 you after you've walked in - preventing you from walking out.
-
-You can use the `setBlock` command to achieve this:
-
-~~~ { .python }
-    mc.setBlock(x, y, z, block_id)
-~~~

@@ -3,19 +3,21 @@
 * KS3
 * This activity will help you understand positions in Minecraft and conditional
  statements in Python.
-* You will need: Minecraft with the Python API, webcam or picamera.
+* You will need: Minecraft with the Python API, USB webcam or a PiCamera.
 
-You will build a photo booth, then create a program that takes a photo when you step inside.
+You will build a photo booth, then create a program that takes a photo when you
+step inside. Its just like the trap activity, but it takes a photo instead of
+trapping you.
 
 ## Building the booth
 
-Use Steve's building skills to construct a 3 walled cubicle like the picture below:
+Use your building skills to construct a 3 walled cubicle like the picture below:
 
 ![booth](booth.png)
 
 ## Positions
 
-You need to include the usual libraries at the start of your program:
+Start your program with the usual lines:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
@@ -51,7 +53,7 @@ Put this code into your loop (make sure the code is indented properly) and run
 your program again. This time, when you walk into the booth the program should
 print out 'say cheese!'.
 
-Now change your program so instead of printing a message it takes a photo of you using an attached web cam or picamera.
+Now change your program so instead of printing a message it takes a photo of you using an attached web cam or PiCamera.
 
 ## Webcam
 
@@ -70,7 +72,7 @@ os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
 
 ## Picamera
 
-The picamera needs to be [installed](https://www.raspberrypi.org/help/camera-module-setup/) along with the [picamera Python library](https://www.raspberrypi.org/documentation/usage/camera/python/README.md).
+The PiCamera needs to be [installed](https://www.raspberrypi.org/help/camera-module-setup/) along with the [PiCamera Python library](https://www.raspberrypi.org/documentation/usage/camera/python/README.md).
 
 ~~~ { .python }
 filename = 'image.jpg'

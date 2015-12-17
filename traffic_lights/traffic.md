@@ -10,7 +10,7 @@ You will create traffic lights in Minecraft and animate them with a loop.
 
 ## Creating blocks
 
-You need the usual libraries at the start of your program:
+You need to import the Minecraft library and setup the `handle`:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
@@ -39,12 +39,9 @@ Then create the 3 lights with a wool block set to black:
     mc.setBlock(x, y, z, block.WOOL.id, 15)
 
 In this case, you pass an extra parameter (15) to setBlock which sets the wool
-block to be black. Here are the colours you need:
+block to be black. Here are all the colours:
 
-* black = 15
-* red = 14
-* amber = 4
-* green = 13
+\ ![wool colours](wool_types.jpg)
 
 ## Loops
 

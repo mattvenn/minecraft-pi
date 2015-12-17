@@ -14,9 +14,10 @@ Image courtesy of [crpeh](https://www.reddit.com/r/Minecraft/comments/14i1lu/we_
 ## Single blocks
 
 It's easy to create a single block in the Minecraft world. First of all, import
-the Minecraft library:
+the Minecraft libraries:
 
     import mcpi.minecraft as minecraft
+    import mcpi.block as block
 
 Then create a `handle` that will let you interface Python with Minecraft:
 
@@ -30,7 +31,11 @@ X, Y and Z are the co-ordinates where the block is placed:
 
 \ ![xyz](xyz.png)
 
-And the `block_id` is the number of the block you want to place:
+And the `block_id` is either the number of the block you want to place, or its
+name. Both these commands make a gold block:
+
+    mc.setBlock(x, y, z, 41)
+    mc.setBlock(x, y, z, block.GOLD_BLOCK.id)
 
 \ ![blocks](blocks.jpg)
 
@@ -52,10 +57,10 @@ Richardson](https://twitter.com/CraigArgh)
 
 An easy way to clear a big space to start building, is to use `setBlocks` to fill a volume with air blocks:
 
-    mc.setBlocks(-10,0,-10,10,10,10,0)
+    mc.setBlocks(-10,0,-10,10,10,10,block.AIR.id)
 
 So when you clear the area with the command above, the volume is
-from x = -10 to x = 10, y = 0 to y = 10, and z = -10 to z = 10. The `block_id` is 0, which is the code for air.
+from x = -10 to x = 10, y = 0 to y = 10, and z = -10 to z = 10. 
 
 ## Tower blocks
 
@@ -65,12 +70,10 @@ Try using your `setBlocks` skills to build a few big tower blocks.
 
 ## Pyramids
 
-\ ![pyramid](pyramid.png)
-
 Try building a pyramid by stacking 5 squares on top of each other, with each square a bit smaller than the last:
 
-    mc.setBlocks(-5,0,-5,5,1,5,7)
-    mc.setBlocks(-4,1,-4,4,2,4,7)
+    mc.setBlocks(-5,0,-5,5,1,5,block.GOLD_BLOCK.id)
+    mc.setBlocks(-4,1,-4,4,2,4,block.GOLD_BLOCK.id)
     ...
 
 Can you see a pattern in the X, Y and Z numbers? Because there is a simple
@@ -87,3 +90,5 @@ while width > 0:
 ~~~
 
 Try using a loop to build a huge pyramid!
+
+\ ![pyramid](pyramid.png)

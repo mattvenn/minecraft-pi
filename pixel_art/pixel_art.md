@@ -18,7 +18,7 @@ blocks.
 Then make a copy of your image, but convert the colours to numbers using this
 table:
 
-![wool-colours](wool-colours.png)
+![wool colours](wool_types.jpg)
 
 ## Lists
 
@@ -37,8 +37,8 @@ This is the data structure used to create the picture above:
 
 
 You can test this works by iterating through the data structure. Iterating means
-stepping through it. In this case you'll be using a `for loop` because it does
-something for each item in the list.
+stepping through it. In this case you'll be using a `for loop` because it runs
+the indented code _for_ each item in the list.
 
 ~~~ { .python }
 for row in pixels:
