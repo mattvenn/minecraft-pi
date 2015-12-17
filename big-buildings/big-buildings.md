@@ -58,9 +58,13 @@ from x = -10 to x = 10, y = 0 to y = 10, and z = -10 to z = 10. The `block_id` i
 
 ## Tower blocks
 
+\ ![tower](spiral_towers.png)
+
 Try using your `setBlocks` skills to build a few big tower blocks.
 
 ## Pyramids
+
+\ ![pyramid](pyramid.png)
 
 Try building a pyramid by stacking 5 squares on top of each other, with each square a bit smaller than the last:
 
