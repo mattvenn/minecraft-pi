@@ -12,7 +12,7 @@ with open(id_file) as fh:
 #how big we want the montage to be
 crop_width = 280
 crop_y_offset = 50
-x_tiles = 7
+x_tiles = 8
 print(len(block_nums))
 y_tiles = int(math.ceil(len(block_nums) / float(x_tiles)))
 mont_width = x_tiles * crop_width
