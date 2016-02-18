@@ -74,4 +74,16 @@ is something very similar for the 3D world of Minecraft:
 If you put your code in a loop, then as you move around in Minecraft, the
 distance will be constantly recalculated.
 
-How can you make the lights flash faster the smaller `dist` is?
+How can you make the lights flash faster the smaller `dist` is? Here's some code
+that turns a light on and off at a set frequency:
+
+~~~ { .python }
+import pibrella
+import time
+
+while True:
+    pibrella.light.red.on()             # turn on the red LED
+    time.sleep(0.1)
+    pibrella.light.red.off()            # turn off the red LED
+    time.sleep(0.1)
+~~~
