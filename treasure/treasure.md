@@ -10,7 +10,7 @@ You will use the PiBrella's lights to guide you to hidden treasure in Minecraft.
 
 ## Lights
 
-Try this program to check the PiBrella is working:
+Type this program into a new file and save it as `treasure.py`:
 
 ~~~ { .python }
 import pibrella
@@ -18,15 +18,18 @@ pibrella.light.on()
 ~~~
 
 Afer saving the program, you'll have to run it using the `sudo` command because
-accessing the Raspberry Pi's GPIOs needs super user privileges. If your program
-is called treasure.py, open a terminal, change to the directory where your
-program is and type:
+accessing the Raspberry Pi's GPIOs needs super user privileges. 
+
+Start a terminal by double clicking the `LXTerminal` icon on the desktop.
+Then in the black terminal window type:
 
     sudo python treasure.py
 
+Which should turn all the PiBrella's lights on.
+
 ## Calculating distance in Minecraft
 
-In previous exercises, you've used `mc.player.getTilePos()` to find Steve's
+In previous exercises, you've used `mc.player.getTilePos()` to find your
 position. This function returns a type of object called `Vec3`. In the past
 you've accessed the x, y and z co-ordinates like this:
 
@@ -34,7 +37,7 @@ you've accessed the x, y and z co-ordinates like this:
         # do something
 
 This time you'll use another `Vec3` object to help calculate the distance
-between Steve and the treasure. Add this to your program:
+between you and the treasure. Add this to your program:
 
 ~~~ { .python }
 from mcpi.vec3 import Vec3
