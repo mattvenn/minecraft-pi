@@ -1,8 +1,8 @@
 # Treasure Hunt
 
-* KS3
-* This activity will help you understand, how to use a Pibrella with Minecraft
-* You will need: Minecraft with the Python API, PiBrella add on board
+* This activity will help you understand how to use a Pibrella with Minecraft
+* The Vec3 position object
+* Pythagoras theorum in 3D
 
 You will use the PiBrella's lights to guide you to hidden treasure in Minecraft.
 

@@ -1,6 +1,5 @@
 # Traffic lights
 
-* KS3
 * This activity will help you understand loops using Python.
 * You will need: Minecraft with the Python API
 
@@ -19,7 +18,7 @@ import mcpi.block as block
 mc = minecraft.Minecraft.create()
 ~~~
 
-Then clear a space and send Steve there:
+Then clear a space and send your player there:
 
 ~~~ { .python }
 # clear area
@@ -34,14 +33,17 @@ traffic light.
 
 ## Coloured wool blocks
 
-Then create the 3 lights with a wool block set to black:
-
-    mc.setBlock(x, y, z, block.WOOL.id, 15)
-
-In this case, you pass an extra parameter (15) to setBlock which sets the wool
-block to be black. Here are all the colours:
+To change colours of blocks in Minecraft, you can use the `WOOL` block. It's a
+special block that can be set to 16 different colours:
 
 \ ![wool colours](wool_types.jpg)
+
+Here's how you could create a black `WOOL` block at the 0, 0, 0 position.
+
+    mc.setBlock(0, 0, 0, block.WOOL.id, 15)
+
+In this case, you pass an extra parameter (15) to setBlock which sets the wool
+block to be black. 
 
 ## Loops
 
@@ -53,12 +55,12 @@ import time
 while True:
 
     # make block red
-    mc.setBlock(x, y, z, block.WOOL.id, 14)
+    mc.setBlock(0, 0, 0, block.WOOL.id, 14)
     # wait for 1 second
     time.sleep(1)
 
     # make block black
-    mc.setBlock(x, y, z, block.WOOL.id, 15)
+    mc.setBlock(0, 0, 0, block.WOOL.id, 15)
     # wait for 1 second
     time.sleep(1)
 ~~~

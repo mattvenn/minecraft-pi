@@ -1,8 +1,8 @@
 # Photo booth
 
-* KS3
-* This activity will help you understand positions in Minecraft and conditional
- statements in Python.
+* This activity will help you understand positions in Minecraft,
+* Conditional statements in Python,
+* How to use a camera with Python,
 * You will need: Minecraft with the Python API, USB webcam or a PiCamera.
 
 You will build a photo booth, then create a program that takes a photo when you
@@ -26,7 +26,7 @@ import mcpi.block as block
 mc = minecraft.Minecraft.create()
 ~~~
 
-Now add the following code to print out Steve's location:
+Now add the following code to print out your location:
 
 ~~~ { .python }
 while True:
@@ -41,8 +41,8 @@ Walk to your booth and make a note of the co-ordinates when you are inside.
 
 ## Conditionals
 
-Now you need a `conditional statement` so that something happens only when Steve
-is in the exact location you just found:
+Now you need a `conditional statement` so that something happens only when
+you're in the exact location you just found:
 
 ~~~ { .python }
 if playpos.x == -247 and playpos.y == 10 and playpos.z == 60:

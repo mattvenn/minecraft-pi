@@ -1,7 +1,6 @@
 # Pixel Art
 
-* KS3
-* This activity will help you understand datastructures and lists in Python
+* This activity will help you understand data structures and lists in Python
 * You will need: Minecraft with the Python API
 
 You will draw a simple pattern on graph paper, and then write a program to
@@ -35,6 +34,8 @@ This is the data structure used to create the picture above:
         [ 1, 13, 1, 15 ],
         ]
 
+Each number represents one pixel. There are 4 pixels in a row and 4 rows in the
+whole picture.
 
 You can test this works by iterating through the data structure. Iterating means
 stepping through it. In this case you'll be using a `for loop` because it runs
@@ -50,7 +51,6 @@ for row in pixels:
 When you run the program you should see each value in the pixel data structure
 printed out.
 
-
 Now change your program so that instead of printing out numbers in the shell,
 it creates the right coloured blocks in Minecraft.
 
@@ -58,10 +58,29 @@ To start with you'll need the usual stuff at the top of the program:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-import mcpi.block as block
 
 mc = minecraft.Minecraft.create()
 ~~~
 
-Then add the `for loop` above, modifying it so that the blocks get created in
-the right places. 
+Then add the `for loop` above. Run your program and check that you can see the
+right numbers being printed out in the right order.
+
+Now you need to create the pixels by using the `setBlock` command to create
+`WOOL` blocks of different colours (like in the traffic light exercise).
+
+You can do this by creating 2 variables, one for x position and one for y
+position. 
+
+~~~ { .python }
+x = 0
+y = 0
+for row in pixels:
+    y = y + 1
+    x = 0
+    for pixel in row:
+        print(x, y, pixel)
+        x = x + 1
+~~~
+
+Use this loop in your program, and add a `setBlock` command to create each pixel
+at the correct co-ordinates.

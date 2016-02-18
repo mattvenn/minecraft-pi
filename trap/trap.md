@@ -1,9 +1,7 @@
 # Trap!
 
-* KS3
-* This activity will help you understand positions in Minecraft and conditional
- statements in Python.
-* You will need: Minecraft with the Python API
+* This activity will help you understand positions in Minecraft
+* conditional statements in Python
 
 You will build a trap, then create a program that builds a wall the instant you
 step inside.
@@ -28,7 +26,7 @@ import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 ~~~
 
-Now add the following code to print out Steve's location:
+Now add the following code to print out your location:
 
 ~~~ { .python }
 while True:
@@ -43,8 +41,8 @@ Walk to your trap and make a note of the co-ordinates when you are inside.
 
 ## Conditionals
 
-Now you need a `conditional statement` so that something happens only when Steve
-is in the exact location you just found. Don't use my numbers below, use the
+Now you need a `conditional statement` so that something happens only when
+you're in the exact location you just found. Don't use my numbers below, use the
 numbers you found when you ran your program.
 
 ~~~ { .python }
