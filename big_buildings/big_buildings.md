@@ -15,7 +15,7 @@ Image courtesy of [crpeh](https://www.reddit.com/r/Minecraft/comments/14i1lu/we_
 You've already seen how to build single blocks at a time with the `setBlock`
 function. 
 
-Placing one block at a time is great, but there is also a way to creat big volumes of blocks by asking Minecraft to fill in all the space in between 2 co-ordinates:
+Placing one block at a time is great, but there's also a way to creat big volumes of blocks by asking Minecraft to fill in all the space in between 2 co-ordinates:
 
 \ ![cuboid](cuboid2.png)
 
@@ -28,18 +28,16 @@ Note that `x1`, `y1`, `z1`, `x2`, `y2` and `z2` are just telling you what
 parameters are needed and how they work. You'd need to put real numbers in to
 make it work.
 
-Let's say you want to build a block 20 blocks wide, centered at the x=0, z=0
-point, starting at ground level and going up to y=10. The code would be:
+To use a real example, let's say you want to make a cube 20 blocks wide,
+with the center at x=0, y=0, z=0. The code would be:
 
-    setBlocks(-10, 0, -10, 10, 10, 10, blocks.GOLD_BLOCK.id)
-
-So when you clear the area with the command above, the volume is
-from x = -10 to x = 10, y = 0 to y = 10, and z = -10 to z = 10. Remember in the
-Minecraft world, y is vertical.
+    setBlocks(-10, -10, -10, 10, 10, 10, blocks.GOLD_BLOCK.id)
 
 An easy way to clear a big space ready to start building is to use `setBlocks` to fill a volume with air blocks:
 
     mc.setBlocks(-60, 0, -60, 60, 60, 60, block.AIR.id)
+
+This command would remove a large cuboid, 120 blocks deep by 120 blocks wide and 60 blocks tall.
 
 ## Tower blocks
 
@@ -91,7 +89,7 @@ width = 5
 height = 0
 
 while width > 0:
-    print(width, -width, height)
+    print(-width, height, width)
     height = height + 1
     width = width - 1
 ~~~
