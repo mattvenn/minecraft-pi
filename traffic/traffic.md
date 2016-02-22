@@ -1,7 +1,8 @@
 # Traffic lights
 
-* This activity will help you understand loops using Python.
-* You will need: Minecraft with the Python API
+* This activity will help you understand loops using Python,
+* Creating different coloured blocks,
+* You will need: Minecraft with the Python API.
 
 You will create traffic lights in Minecraft and animate them with a loop.
 

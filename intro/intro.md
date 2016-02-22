@@ -124,7 +124,7 @@ Each block has a number and a name. For example, the block you created with the
 last program was a gold block. Its number is 41 and the name is `GOLD_BLOCK`.
 
 Sometimes it's clearer to create a block with the name instead of the number. We
-can do that by importing another library first:
+can do that by importing the `block` library first:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
@@ -136,7 +136,7 @@ x, y, z = mc.player.getPos()
 mc.setBlocks(x + 1, y, z, block.GOLD_BLOCK.id)
 ~~~
 
-Here are a list of all the blocks:
+Here are a list of all the blocks with their ID and name:
 
 \ ![blocks](blocks.jpg)
 
@@ -159,7 +159,7 @@ while True:
     mc.setBlocks(x, y, z, block.FLOWER_CYAN.id)
 ~~~
 
-Since we used a while True loop this will go on forever. To stop it, hit Ctrl + C in the Python window.
+Since we used a `while True` loop this will go on forever. To stop it, hit Ctrl + C in the Python window.
 
 Try a few different types of blocks. Can you work out how to change the code so
 the blocks get created above you or below you?

@@ -30,33 +30,35 @@ Which should turn all the PiBrella's lights on.
 ## Calculating distance in Minecraft
 
 In previous exercises, you've used `mc.player.getTilePos()` to find your
-position. This function returns a type of object called `Vec3`. In the past
-you've accessed the x, y and z co-ordinates like this:
+position. In the past you've accessed the x, y and z co-ordinates like this:
 
-	if playpos.x == -247 and playpos.y == 10 and playpos.z ==60:
+    x, y, z = mc.player.getTilePos()
+	if x == -247 and y == 10 and z ==60:
         # do something
 
-This time you'll use another `Vec3` object to help calculate the distance
-between you and the treasure. Add this to your program:
+To get the distance between you and the treasure, you'll first need to 'hide'
+the treasure by creating some variables to store its location:
 
 ~~~ { .python }
-from mcpi.vec3 import Vec3
 # hide the treasure
-destination = Vec3(100, 5, 20)
+treas_x = 100
+treas_y = 5
+treas_z = 20
 ~~~
 
-The `destination` variable is a `Vec3` object, and you can subtract different
-`Vec3` objects to find the difference between them.
-
-Add this to your program:
+Now you can subtract your position from the treasure position to find the
+distances:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 
-playpos = mc.player.getTilePos()
-diff = playpos - destination
-print(diff.x, diff.y, diff.z)
+while True:
+    x, y, z = mc.player.getTilePos()
+    dist_x = x - treas_x
+    dist_y = y - treas_y
+    dist_z = z - treas_z
+    print(dist_x, dist_y, dist_z)
 ~~~
 
 You should see the x, y and z distance between your current position and the
@@ -70,7 +72,7 @@ In the 2 dimensional world, you'll have come across Pythagoras' theorum. There
 is something very similar for the 3D world of Minecraft:
 
     from math import sqrt
-	dist = sqrt(diff.x * diff.x + diff.y * diff.y + diff.z * diff.z)
+	dist = sqrt(dist_x * dist_x + dist_y * dist_y + dist_z * dist_z)
 
 ## Flashy lights
 

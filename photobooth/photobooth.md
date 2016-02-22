@@ -53,30 +53,18 @@ Put this code into your loop (make sure the code is indented properly) and run
 your program again. This time, when you walk into the booth the program should
 print out 'say cheese!'.
 
-Now change your program so instead of printing a message it takes a photo of you using an attached web cam or PiCamera.
+Now change your program so instead of printing a message it takes a photo of you using a web cam.
 
 ## Webcam
 
-If you have a webcam, first install the fswebcam program by opening a terminal and typing:
+You'll be using a USB webcam. Some software called `fswebcam` has already been
+installed for you.
 
-    sudo apt-get install fswebcam
-
-Then this Python code will take a photo:
+Try this Python code to take a photo:
 
 ~~~ { .python }
 filename = 'image.jpg'
 import os
 # os.system() runs a linux command. fswebcam is a program that can take photos
 os.system("fswebcam  --no-banner -r 800x600 -d /dev/video0 " + filename)
-~~~
-
-## Picamera
-
-The PiCamera needs to be [installed](https://www.raspberrypi.org/help/camera-module-setup/) along with the [PiCamera Python library](https://www.raspberrypi.org/documentation/usage/camera/python/README.md).
-
-~~~ { .python }
-filename = 'image.jpg'
-import picamera
-camera = picamera.PiCamera()
-camera.capture(filename)
 ~~~
