@@ -3,8 +3,8 @@ import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 
 while True:
-	playpos = mc.player.getTilePos()
-	if playpos.x == -247 and playpos.y == 10 and playpos.z ==60:
+	x, y, z = mc.player.getTilePos()
+	if x == -247 and y == 10 and z ==60:
 		#trap!
 		mc.postToChat("trapped!")
 		mc.setBlock(-247, 10, 59, 45)

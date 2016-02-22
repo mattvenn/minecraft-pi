@@ -43,20 +43,19 @@ This command would remove a large cuboid, 120 blocks deep by 120 blocks wide and
 
 Try using `setBlocks` to build a few big blocks.
 
-\ ![tower](spiral_towers.png)
+\ ![tower](tower_block.png)
 
 If you use a loop, you could build a tower block with each story built of a
 different kind of block:
 
-# TODO test this and get a picture of it
-
 ~~~ { .python }
 story = 0
+block_id = 10
 # a 10 story building
 while story < 10:
-    block_id = story
     mc.setBlocks(-5, story, -5, 5, story, 5, block_id)
     story = story + 1
+    block_id = block_id + 1
 ~~~
 
 ## Pyramids

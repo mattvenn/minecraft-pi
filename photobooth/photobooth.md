@@ -30,8 +30,8 @@ Now add the following code to print out your location:
 
 ~~~ { .python }
 while True:
-	playpos = mc.player.getTilePos()
-    print(playpos)
+	x, y, z = mc.player.getTilePos()
+    print(x, y, z)
 ~~~
 
 Run the program and walk around. You should see your position in x, y, z
@@ -45,7 +45,7 @@ Now you need a `conditional statement` so that something happens only when
 you're in the exact location you just found:
 
 ~~~ { .python }
-if playpos.x == -247 and playpos.y == 10 and playpos.z == 60:
+if x == -247 and y == 10 and z == 60:
     print("say cheese!")
 ~~~
 
