@@ -29,8 +29,8 @@ mc.setBlocks(-60,0,-60,60,50,60,block.AIR.id)
 mc.player.setPos(5,0,0)
 ~~~
 
-Either use a few `setBlock` commands or a single `setBlocks` command to create a
-traffic light.
+Now use a few `setBlock` commands to create a traffic light like the one in the
+picture.
 
 ## Coloured wool blocks
 

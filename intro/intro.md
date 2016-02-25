@@ -10,13 +10,26 @@
 
 Double click the `Minecraft Pi Edition` icon on the desktop. 
 
-When Minecraft Pi has loaded, click on Start Game, followed by Create new. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+When Minecraft Pi has loaded, click on Start Game, followed by Create new. 
 
-Leave the window the size it is, if it's maximised it can cause problems later.
+*Leave the window the size it is, if it's maximised it can cause problems
+later.*
 
 Use the mouse to look around, and the following keys:
 
-\ ![keys](minecraft-keys.png)
+Key             Action 
+-------         ------
+W		        Forward
+A		        Left
+S		        Backward
+D		        Right
+E		        Inventory
+Space		    Jump
+Double Space	Fly up / Fall
+Shift           Fly down
+Esc     		Pause / Game menu
+Tab     		Release mouse cursor
+------------------------------------
 
 You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press E and select something from the inventory.
 
@@ -66,7 +79,10 @@ import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
-print(x, y, z)
+# convert the x, y, z co-ordinate numbers into a string
+position = str(x) + ", " + str(y) + ", " + str(z)
+# print the string in your minecraft window
+mc.postToChat(position)
 ~~~
 
 The x, y, and z variables contain each part of your position coordinates: x and z are the walking directions (forward/back and left/right) and y is up/down.
@@ -80,7 +96,8 @@ the program again - do the numbers still match?
 ## Teleport
 
 As well as finding out your current location you can specify a particular
-location to teleport to. Start a new program and the save it as `teleport.py`.
+location to teleport to. 
+Create a new file and save it as `teleport.py`.
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
@@ -93,13 +110,16 @@ mc.player.setPos(x, y+100, z)
 
 This program will first get your location and store it in the x, y and z
 variables. Then it uses `setPos` to transport your player 100 spaces higher up
-than you currently are. This means you'll teleport to the middle of the sky and fall straight back down to where you started.
+than you currently are. This means you'll teleport up in the air and if you're
+not already flying, will fall down to the ground.
 
 Try teleporting to somewhere else!
 
 ## Single blocks
 
-To place a block, use the `setBlock` code:
+First, start a new Python program and include the usual 2 starting lines.
+
+Then to place a block, use the `setBlock` code:
 
     mc.setBlock(x, y, z, block_id)
 
@@ -133,7 +153,7 @@ import mcpi.block as block
 mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
-mc.setBlocks(x + 1, y, z, block.GOLD_BLOCK.id)
+mc.setBlock(x + 1, y, z, block.GOLD_BLOCK.id)
 ~~~
 
 Here are a list of all the blocks with their ID and name:
@@ -156,7 +176,7 @@ mc = minecraft.Minecraft.create()
 
 while True:
     x, y, z = mc.player.getPos()
-    mc.setBlocks(x, y, z, block.FLOWER_CYAN.id)
+    mc.setBlock(x, y, z, block.FLOWER_CYAN.id)
 ~~~
 
 Since we used a `while True` loop this will go on forever. To stop it, hit Ctrl + C in the Python window.
