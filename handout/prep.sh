@@ -16,6 +16,6 @@ echo '% ' >> handout.md
 
 for file in intro traffic teleport trap photobooth big_buildings pixel_art treasure; do
     echo $file
-    cat $file.md  >> handout.md
     echo -e '\\newpage\n' >> handout.md
+    cat $file.md  >> handout.md
 done
