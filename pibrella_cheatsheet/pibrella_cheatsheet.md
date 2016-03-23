@@ -10,7 +10,7 @@ Programs must be run as root, which means you need to start idle from a terminal
 
 Or you can run a program you've written like this:
 
-    sudo python test_pibrella.py
+    sudo python3 test_pibrella.py
 
 # Turning the 3 LEDs on and off
 

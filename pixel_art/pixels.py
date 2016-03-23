@@ -1,10 +1,10 @@
 import mcpi.minecraft as minecraft
-import mcpi.block as block
-
 mc = minecraft.Minecraft.create()
 
+air = 0
+wool = 35
 # clear area
-mc.setBlocks(-60,0,-60,60,50,60,block.AIR.id)
+mc.setBlocks(-60,0,-60,60,50,60,air)
 
 # go there
 mc.player.setPos(5,0,0)
@@ -25,4 +25,4 @@ for row in pixels:
 	y = y + 1
 	for pixel in row:
 		x = x + 1
-		mc.setBlock(x, y, z, block.WOOL.id, pixel)
+		mc.setBlock(x, y, z, wool, pixel)

@@ -1,4 +1,4 @@
-# Teleport
+# Teleport - Pibrella
 
 * This activity will help you understand how to use a Pibrella with Minecraft
 * You will need: Minecraft with the Python API
@@ -30,7 +30,7 @@ need to run the program with the `sudo` command (a shortening of super user do).
 First, open a terminal by double clicking the `LXTerminal` icon on the desktop.
 This opens a black window where you can type the following commands:
 
-    sudo python teleport.py
+    sudo python3 teleport.py
 
 When you press the button you should see the message being printed - probably
 lots of times. Can you press the button quickly enough to only print one

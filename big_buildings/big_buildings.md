@@ -31,11 +31,13 @@ make it work.
 To use a real example, let's say you want to make a cube 20 blocks wide,
 with the center at x=0, y=0, z=0. The code would be:
 
-    setBlocks(-10, -10, -10, 10, 10, 10, blocks.GOLD_BLOCK.id)
+    gold = 41
+    setBlocks(-10, -10, -10, 10, 10, 10, gold)
 
 An easy way to clear a big space ready to start building is to use `setBlocks` to fill a volume with air blocks:
 
-    mc.setBlocks(-60, 0, -60, 60, 60, 60, block.AIR.id)
+    air = 0
+    mc.setBlocks(-60, 0, -60, 60, 60, 60, air)
 
 This command would remove a large cuboid, 120 blocks deep by 120 blocks wide and 60 blocks tall.
 
@@ -62,9 +64,10 @@ while story < 10:
 
 Try building a pyramid by stacking 5 squares on top of each other, with each square a bit smaller than the last:
 
-    mc.setBlocks(-5,0,-5,5,0,5,block.GOLD_BLOCK.id)
-    mc.setBlocks(-4,1,-4,4,1,4,block.GOLD_BLOCK.id)
-    mc.setBlocks(-3,2,-3,3,2,3,block.GOLD_BLOCK.id)
+    gold = 41
+    mc.setBlocks(-5,0,-5,5,0,5,gold)
+    mc.setBlocks(-4,1,-4,4,1,4,gold)
+    mc.setBlocks(-3,2,-3,3,2,3,gold)
     ...
 
 Complete the pattern and test your code, does it make a pyramid?

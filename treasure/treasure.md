@@ -1,4 +1,4 @@
-# Treasure Hunt
+# Treasure Hunt - Pibrella
 
 * This activity will help you understand how to use a Pibrella with Minecraft
 * The Vec3 position object
@@ -13,8 +13,9 @@ You will use the PiBrella's lights to guide you to hidden treasure in Minecraft.
 Type this program into a new file and save it as `treasure.py`:
 
 ~~~ { .python }
-import pibrella
+import pibrella, time
 pibrella.light.on()
+time.sleep(1)
 ~~~
 
 Afer saving the program, you'll have to run it using the `sudo` command because
@@ -23,7 +24,7 @@ accessing the Raspberry Pi's GPIOs needs super user privileges.
 Start a terminal by double clicking the `LXTerminal` icon on the desktop.
 Then in the black terminal window type:
 
-    sudo python treasure.py
+    sudo python3 treasure.py
 
 Which should turn all the PiBrella's lights on.
 

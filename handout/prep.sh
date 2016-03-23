@@ -1,4 +1,4 @@
-rm *md *jpg *png
+rm *md *jpg *png *py
 cp ../documentation/*png .
 
 cp ../intro/* .

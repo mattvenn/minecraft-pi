@@ -1,4 +1,4 @@
-# Photo booth
+# Photo booth - Web Cam
 
 * This activity will help you understand positions in Minecraft,
 * Conditional statements in Python,

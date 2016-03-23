@@ -37,6 +37,8 @@ You can also double tap the space bar to fly into the air. You'll stop flying wh
 
 With the sword in your hand, you can click on blocks in front of you to remove them (or to dig). With a block in your hand, you can use right click to place that block in front of you, or left click to remove a block.
 
+\newpage
+
 ## Hello World with Python
 
 With Minecraft running, bring the focus away from the game by pressing the Tab
@@ -52,7 +54,6 @@ Type the following in, paying attention to capitals and punctuation!
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-
 mc = minecraft.Minecraft.create()
 
 mc.postToChat('Hello World!')
@@ -75,7 +76,6 @@ variables and later prints them out.
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-
 mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
@@ -101,7 +101,6 @@ Create a new file and save it as `teleport.py`.
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-
 mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
@@ -130,11 +129,11 @@ This program should set a block right next to your player:
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-
 mc = minecraft.Minecraft.create()
 
+gold = 41
 x, y, z = mc.player.getPos()
-mc.setBlock(x + 1, y, z, 41)
+mc.setBlock(x + 1, y, z, gold)
 ~~~
 
 If you can't see the block, it might be because it's behind you! Try turning
@@ -143,20 +142,7 @@ around with the mouse.
 Each block has a number and a name. For example, the block you created with the
 last program was a gold block. Its number is 41 and the name is `GOLD_BLOCK`.
 
-Sometimes it's clearer to create a block with the name instead of the number. We
-can do that by importing the `block` library first:
-
-~~~ { .python }
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-
-mc = minecraft.Minecraft.create()
-
-x, y, z = mc.player.getPos()
-mc.setBlock(x + 1, y, z, block.GOLD_BLOCK.id)
-~~~
-
-Here are a list of all the blocks with their ID and name:
+Here is a list of all the blocks with their ID and name:
 
 \ ![blocks](blocks.jpg)
 
@@ -170,13 +156,13 @@ create a trail of blocks behind you automatically.
 
 ~~~ { .python }
 import mcpi.minecraft as minecraft
-import mcpi.block as block
-
 mc = minecraft.Minecraft.create()
+
+flower = 38
 
 while True:
     x, y, z = mc.player.getPos()
-    mc.setBlock(x, y, z, block.FLOWER_CYAN.id)
+    mc.setBlock(x, y, z, flower)
 ~~~
 
 Since we used a `while True` loop this will go on forever. To stop it, hit Ctrl + C in the Python window.
